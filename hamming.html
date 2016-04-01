@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>THE HAMMING DIFFERENCE</h1>
+
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction(){
+  var counter = 0;
+  var str1 = prompt("ENTER THE FIRST DNA CHAIN");
+  var str2 = prompt("ENTER THE SECOND DNA CHAIN");
+
+    while (str2.length != str1.length) {
+      str2 = prompt(" BOTH DNA CHAINS SHOULD HAVE EQUAL LENGTH. PLEASE ENTER THE SECOND DNA CHAIN AGAIN");
+    }
+
+    for (i = 0; i < str1.length; i++){
+      if(str1.charCodeAt(i) != str2.charCodeAt(i) ){
+        counter++;
+      }
+    }
+    alert("THE HAMMING DIFFERENCE IS EQUAL TO"+counter);
+
+    }
+
+</script>
+
+</body>
+</html>
